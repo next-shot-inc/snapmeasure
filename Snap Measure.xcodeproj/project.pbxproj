@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDE2A1181AAAE09200F2AB1A /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE2A1171AAAE09200F2AB1A /* CameraViewController.m */; };
+		FDE2A11B1AAAE0E900F2AB1A /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE2A11A1AAAE0E900F2AB1A /* CaptureSessionManager.m */; };
+		FDE2A11E1AAAE9D800F2AB1A /* overlaygraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE2A11D1AAAE9D800F2AB1A /* overlaygraphic.png */; };
+		FDE2A1201AAAE9EE00F2AB1A /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FDE2A11F1AAAE9EE00F2AB1A /* scanbutton.png */; };
+		FDFF6AC51A4966B60043A396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFF6AC41A4966B60043A396 /* main.m */; };
+		FDFF6AC81A4966B60043A396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFF6AC71A4966B60043A396 /* AppDelegate.m */; };
+		FDFF6ACB1A4966B60043A396 /* StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFF6ACA1A4966B60043A396 /* StartingViewController.m */; };
+		FDFF6ACE1A4966B60043A396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFF6ACC1A4966B60043A396 /* Main.storyboard */; };
+		FDFF6AD01A4966B60043A396 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDFF6ACF1A4966B60043A396 /* Images.xcassets */; };
+		FDFF6AD31A4966B60043A396 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDFF6AD11A4966B60043A396 /* LaunchScreen.xib */; };
+		FDFF6ADF1A4966B60043A396 /* Snap_MeasureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFF6ADE1A4966B60043A396 /* Snap_MeasureTests.m */; };
+		FDFF6AF51A4977500043A396 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AF01A4977500043A396 /* AVFoundation.framework */; };
+		FDFF6AF61A4977500043A396 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AF11A4977500043A396 /* CoreMedia.framework */; };
+		FDFF6AF71A4977500043A396 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AF21A4977500043A396 /* CoreVideo.framework */; };
+		FDFF6AF81A4977500043A396 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AF31A4977500043A396 /* ImageIO.framework */; };
+		FDFF6AF91A4977500043A396 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AF41A4977500043A396 /* QuartzCore.framework */; };
+		FDFF6AFB1A4980860043A396 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFF6AFA1A4980860043A396 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDFF6AD91A4966B60043A396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDFF6AB71A4966B60043A396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDFF6ABE1A4966B60043A396;
+			remoteInfo = "Snap Measure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDE2A1171AAAE09200F2AB1A /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		FDE2A1191AAAE0CA00F2AB1A /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		FDE2A11A1AAAE0E900F2AB1A /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		FDE2A11C1AAAE0FA00F2AB1A /* CaptureSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		FDE2A11D1AAAE9D800F2AB1A /* overlaygraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlaygraphic.png; path = "../../AROverlayExample-master/AROverlayExample/overlaygraphic.png"; sourceTree = "<group>"; };
+		FDE2A11F1AAAE9EE00F2AB1A /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scanbutton.png; path = "../../AROverlayExample-master/AROverlayExample/scanbutton.png"; sourceTree = "<group>"; };
+		FDFF6ABF1A4966B60043A396 /* Snap Measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snap Measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFF6AC31A4966B60043A396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFF6AC41A4966B60043A396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDFF6AC61A4966B60043A396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDFF6AC71A4966B60043A396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDFF6AC91A4966B60043A396 /* StartingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartingViewController.h; sourceTree = "<group>"; };
+		FDFF6ACA1A4966B60043A396 /* StartingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartingViewController.m; sourceTree = "<group>"; };
+		FDFF6ACD1A4966B60043A396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDFF6ACF1A4966B60043A396 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FDFF6AD21A4966B60043A396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FDFF6AD81A4966B60043A396 /* Snap MeasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Snap MeasureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFF6ADD1A4966B60043A396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFF6ADE1A4966B60043A396 /* Snap_MeasureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Snap_MeasureTests.m; sourceTree = "<group>"; };
+		FDFF6AF01A4977500043A396 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FDFF6AF11A4977500043A396 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FDFF6AF21A4977500043A396 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FDFF6AF31A4977500043A396 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		FDFF6AF41A4977500043A396 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FDFF6AFA1A4980860043A396 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDFF6ABC1A4966B60043A396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFF6AFB1A4980860043A396 /* Foundation.framework in Frameworks */,
+				FDFF6AF51A4977500043A396 /* AVFoundation.framework in Frameworks */,
+				FDFF6AF61A4977500043A396 /* CoreMedia.framework in Frameworks */,
+				FDFF6AF71A4977500043A396 /* CoreVideo.framework in Frameworks */,
+				FDFF6AF81A4977500043A396 /* ImageIO.framework in Frameworks */,
+				FDFF6AF91A4977500043A396 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFF6AD51A4966B60043A396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDFF6AB61A4966B60043A396 = {
+			isa = PBXGroup;
+			children = (
+				FDFF6AFA1A4980860043A396 /* Foundation.framework */,
+				FDFF6AF01A4977500043A396 /* AVFoundation.framework */,
+				FDFF6AF11A4977500043A396 /* CoreMedia.framework */,
+				FDFF6AF21A4977500043A396 /* CoreVideo.framework */,
+				FDFF6AF31A4977500043A396 /* ImageIO.framework */,
+				FDFF6AF41A4977500043A396 /* QuartzCore.framework */,
+				FDFF6AC11A4966B60043A396 /* Snap Measure */,
+				FDFF6ADB1A4966B60043A396 /* Snap MeasureTests */,
+				FDFF6AC01A4966B60043A396 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDFF6AC01A4966B60043A396 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDFF6ABF1A4966B60043A396 /* Snap Measure.app */,
+				FDFF6AD81A4966B60043A396 /* Snap MeasureTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDFF6AC11A4966B60043A396 /* Snap Measure */ = {
+			isa = PBXGroup;
+			children = (
+				FDFF6AC61A4966B60043A396 /* AppDelegate.h */,
+				FDFF6AC71A4966B60043A396 /* AppDelegate.m */,
+				FDE2A11C1AAAE0FA00F2AB1A /* CaptureSessionManager.h */,
+				FDE2A11A1AAAE0E900F2AB1A /* CaptureSessionManager.m */,
+				FDE2A1191AAAE0CA00F2AB1A /* CameraViewController.h */,
+				FDE2A1171AAAE09200F2AB1A /* CameraViewController.m */,
+				FDFF6AC91A4966B60043A396 /* StartingViewController.h */,
+				FDFF6ACA1A4966B60043A396 /* StartingViewController.m */,
+				FDFF6ACC1A4966B60043A396 /* Main.storyboard */,
+				FDFF6ACF1A4966B60043A396 /* Images.xcassets */,
+				FDFF6AD11A4966B60043A396 /* LaunchScreen.xib */,
+				FDFF6AC21A4966B60043A396 /* Supporting Files */,
+			);
+			path = "Snap Measure";
+			sourceTree = "<group>";
+		};
+		FDFF6AC21A4966B60043A396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDFF6AC31A4966B60043A396 /* Info.plist */,
+				FDE2A11D1AAAE9D800F2AB1A /* overlaygraphic.png */,
+				FDFF6AC41A4966B60043A396 /* main.m */,
+				FDE2A11F1AAAE9EE00F2AB1A /* scanbutton.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDFF6ADB1A4966B60043A396 /* Snap MeasureTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFF6ADE1A4966B60043A396 /* Snap_MeasureTests.m */,
+				FDFF6ADC1A4966B60043A396 /* Supporting Files */,
+			);
+			path = "Snap MeasureTests";
+			sourceTree = "<group>";
+		};
+		FDFF6ADC1A4966B60043A396 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDFF6ADD1A4966B60043A396 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDFF6ABE1A4966B60043A396 /* Snap Measure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFF6AE21A4966B60043A396 /* Build configuration list for PBXNativeTarget "Snap Measure" */;
+			buildPhases = (
+				FDFF6ABB1A4966B60043A396 /* Sources */,
+				FDFF6ABC1A4966B60043A396 /* Frameworks */,
+				FDFF6ABD1A4966B60043A396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Snap Measure";
+			productName = "Snap Measure";
+			productReference = FDFF6ABF1A4966B60043A396 /* Snap Measure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDFF6AD71A4966B60043A396 /* Snap MeasureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFF6AE51A4966B60043A396 /* Build configuration list for PBXNativeTarget "Snap MeasureTests" */;
+			buildPhases = (
+				FDFF6AD41A4966B60043A396 /* Sources */,
+				FDFF6AD51A4966B60043A396 /* Frameworks */,
+				FDFF6AD61A4966B60043A396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDFF6ADA1A4966B60043A396 /* PBXTargetDependency */,
+			);
+			name = "Snap MeasureTests";
+			productName = "Snap MeasureTests";
+			productReference = FDFF6AD81A4966B60043A396 /* Snap MeasureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDFF6AB71A4966B60043A396 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Camille Dulac";
+				TargetAttributes = {
+					FDFF6ABE1A4966B60043A396 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 99UUG8N44C;
+					};
+					FDFF6AD71A4966B60043A396 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FDFF6ABE1A4966B60043A396;
+					};
+				};
+			};
+			buildConfigurationList = FDFF6ABA1A4966B60043A396 /* Build configuration list for PBXProject "Snap Measure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDFF6AB61A4966B60043A396;
+			productRefGroup = FDFF6AC01A4966B60043A396 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDFF6ABE1A4966B60043A396 /* Snap Measure */,
+				FDFF6AD71A4966B60043A396 /* Snap MeasureTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDFF6ABD1A4966B60043A396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE2A1201AAAE9EE00F2AB1A /* scanbutton.png in Resources */,
+				FDFF6ACE1A4966B60043A396 /* Main.storyboard in Resources */,
+				FDE2A11E1AAAE9D800F2AB1A /* overlaygraphic.png in Resources */,
+				FDFF6AD31A4966B60043A396 /* LaunchScreen.xib in Resources */,
+				FDFF6AD01A4966B60043A396 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFF6AD61A4966B60043A396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDFF6ABB1A4966B60043A396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFF6ACB1A4966B60043A396 /* StartingViewController.m in Sources */,
+				FDE2A11B1AAAE0E900F2AB1A /* CaptureSessionManager.m in Sources */,
+				FDE2A1181AAAE09200F2AB1A /* CameraViewController.m in Sources */,
+				FDFF6AC81A4966B60043A396 /* AppDelegate.m in Sources */,
+				FDFF6AC51A4966B60043A396 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDFF6AD41A4966B60043A396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFF6ADF1A4966B60043A396 /* Snap_MeasureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDFF6ADA1A4966B60043A396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDFF6ABE1A4966B60043A396 /* Snap Measure */;
+			targetProxy = FDFF6AD91A4966B60043A396 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDFF6ACC1A4966B60043A396 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDFF6ACD1A4966B60043A396 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDFF6AD11A4966B60043A396 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDFF6AD21A4966B60043A396 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDFF6AE01A4966B60043A396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		FDFF6AE11A4966B60043A396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDFF6AE31A4966B60043A396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Snap Measure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FDFF6AE41A4966B60043A396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Snap Measure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FDFF6AE61A4966B60043A396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Snap MeasureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap Measure.app/Snap Measure";
+			};
+			name = Debug;
+		};
+		FDFF6AE71A4966B60043A396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Snap MeasureTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap Measure.app/Snap Measure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDFF6ABA1A4966B60043A396 /* Build configuration list for PBXProject "Snap Measure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFF6AE01A4966B60043A396 /* Debug */,
+				FDFF6AE11A4966B60043A396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFF6AE21A4966B60043A396 /* Build configuration list for PBXNativeTarget "Snap Measure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFF6AE31A4966B60043A396 /* Debug */,
+				FDFF6AE41A4966B60043A396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFF6AE51A4966B60043A396 /* Build configuration list for PBXNativeTarget "Snap MeasureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFF6AE61A4966B60043A396 /* Debug */,
+				FDFF6AE71A4966B60043A396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDFF6AB71A4966B60043A396 /* Project object */;
+}
